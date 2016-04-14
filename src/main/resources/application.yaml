@@ -1,0 +1,26 @@
+zookeeper:
+    host: 192.168.100.177
+    port: 2181
+    timeout:  20000
+application:
+    name: schedule_provider
+    mongoPath:  /daq/config/mongo
+    masterPath: /daq/master/um
+    redisPath:  /daq/config/redis
+    heartBeat:  2000
+    bindAddr: 192.168.0.60
+provider: 
+    nodePath: /daq/provider
+    port: 8888
+    group:  normal
+    version:  0.0.1
+    timeout:  20
+hive: 
+    host: 192.168.0.92
+    port: 10000
+    dbName: public_sentiment
+    driverClass: public_sentiment
+    user: cloudera
+    password: cloudera
+hdfs: 
+    nodePath: /daq/config/hdfs
